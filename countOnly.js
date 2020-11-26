@@ -8,12 +8,7 @@ const countOnly = function(allItems, itemsToCount) {
   
   for (let item of allItems){
     if (itemsToCount[item]){
-      if (results[item]){
-        results[item]++;
-      }else {
-        results[item] = 0;
-        results[item]++;
-      }
+      results[item] ? results[item]++ : results[item] = 1;
     }
   }
   return results;
