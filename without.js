@@ -19,7 +19,7 @@ const eqArrays = function (arrayA, arrayB) {
   }
   return true;
 };
-
+module.exports =without;
 assertArraysEqual(without([1,2,3,4,5],[2,5]), [1,3,4]);
 assertArraysEqual(without([1, 2, 3, 4, 5], [19]), [1,2,3,4,5]);
 

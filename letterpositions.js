@@ -25,7 +25,7 @@ const eqArrays = function(arrayA, arrayB) {
   }
   return true;
 };
-
+module.exports = letterPositions;
 let testA = letterPositions("hello");
 assertArraysEqual(testA["h"], [0]);
 assertArraysEqual(testA["e"], [1]);

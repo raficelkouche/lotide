@@ -1,3 +1,5 @@
+const { builtinModules } = require('module');
+
 const eqArrays = function (arrayA, arrayB) {
   if (arrayA.length != arrayB.length) {
     return false;
@@ -33,6 +35,7 @@ const assertObjectsEqual = function(objA, objB){
   console.log((eqObjects(objA, objB)) ? `✅✅✅ Assertion Passed: ${inspect(objA)} === ${inspect(objB)}` :
     `🛑🛑🛑  Assertion Failed: ${inspect(objA)} !== ${inspect(objB)}`);
 }
+module.exports = assertObjectsEqual;
 
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };

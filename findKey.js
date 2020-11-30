@@ -10,7 +10,7 @@ const findKey = function(object, callback) {
   }
   return undefined;
 }
-
+module.exports =findKey;
 //Testing
 const testA = findKey({
   "Blue Hill": { stars: 1 },
