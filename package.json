@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@raficelkouche/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "a JS utility library",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/raficelkouche/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rafic El Kouche",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/raficelkouche/lotide/issues"
