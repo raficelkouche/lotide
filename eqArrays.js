@@ -4,7 +4,11 @@ const eqArrays = function(arrayA, arrayB){
     return false;
   }
   for (let i = 0; i < arrayA.length; i++){
-    if (arrayA[i] !== arrayB[i]) {
+    if(Array.isArray(arrayA[i])) {
+       if (!eqArrays(arrayA[i], arrayB[i])) {
+         return false;
+       }
+    } else if (arrayA[i] !== arrayB[i]) {
       return false;
     }
   }
